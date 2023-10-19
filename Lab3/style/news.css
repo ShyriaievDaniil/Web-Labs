@@ -1,0 +1,79 @@
+.news h2{
+    margin:7px;
+    padding: 5px;
+    background-color: rgba(125,100,256,.6);
+    border-radius: 10px;
+}
+.news-items {
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-auto-rows: 0;
+}
+
+.news-items div {
+    overflow: hidden;
+    box-shadow: 0 5px 4px white, 0 4px 3px darkslateblue, 0 11px 10px royalblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../resources/news.png");
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    display: grid;
+    grid-template-rows: 1fr 4fr 30px;
+}
+
+.news-items div p {
+    margin: -10px 0 5px 0;
+    overflow: hidden;
+}
+
+.news-items div a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin: 0 -10% 0 -10%;
+    padding: 5px 10% 40px 10%;
+    text-align: center;
+    background-color: rgba(125, 100, 256, .6);
+    transition: 0.5s;
+}
+
+.news-items div a:hover {
+    text-shadow: none;
+    color: rgba(125, 100, 256, 1);
+    background-color: rgba(256, 256, 256, 1);
+}
+
+.more-news a{
+    font-size: 3vw;
+    border-radius: 20px;
+    text-decoration: none;
+    display: block;
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 5px;
+    text-align: center;
+    background-color: rgba(125, 100, 256, .7);
+    transition: 0.5s;
+    box-shadow: 0 5px 4px white, 0 4px 3px darkslateblue, 0 11px 10px royalblue;
+}
+.more-news a:hover {
+    text-shadow: none;
+    color: rgba(125, 100, 256, 1);
+    background-color: rgba(256, 256, 256, 1);
+}
+@media (max-width: 767px) {
+    .news-items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .more-news a{
+        font-size: 5vw;
+    }
+}

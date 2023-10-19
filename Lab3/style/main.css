@@ -1,0 +1,84 @@
+body {
+    text-shadow: 0 1px 4px white, 0 3px 3px darkslateblue, 2px 0 10px royalblue;
+    color: azure;
+    font-size: 20px;
+    max-width: 100vw;
+    margin: 0;
+    background-image: url(../resources/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content{
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    padding-top: 15px;
+    width: 100vw;
+    position: fixed;
+    z-index: 30;
+}
+header .content {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 4px white, 0 4px 3px darkslateblue, 0 11px 10px royalblue;
+    background-image: linear-gradient(rgba(125,100,256,0.4), rgba(125,100,256,1));}
+header .content div{
+    width: 30%;
+    display: inline-block;
+}
+.placeholder{
+    width: 22.5%;
+    aspect-ratio: 4/3;
+    min-height: 75px;
+    padding-top: 35px;
+    max-height: 170px;
+}
+footer{
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    height: 150px;
+    background-color: rgba(125, 100, 256, .6);
+    display: grid;
+    grid-template: 3fr 1fr/repeat(3, 1fr);
+}
+.contacts{
+    grid-column: 2/3;
+    grid-row:2/3;
+    display: flex;
+    justify-content: center;
+}
+.contacts a{
+    margin: 2px;
+}
+h1, h2, h3{
+    text-align: center;
+    color: azure;
+    font-family: Lucida Console, Courier, monospace;
+}
+h1{
+    font-size: 5vw;
+}
+h2{
+    font-size: 3vw;
+}
+h3{
+    font-size: 2vw;
+}
+a{
+    color: azure;
+}
+@media(max-width: 767px){
+    h1{
+        font-size: 7vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+}
